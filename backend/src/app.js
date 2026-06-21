@@ -32,9 +32,9 @@ export function createApp() {
 
   app.use(helmet());
   app.use(cors({
-  origin: 'http://localhost:5173',
-  credentials: true,
-}));
+    origin: env.clientOrigin,
+    credentials: true,
+  }));
   app.use(express.json({ limit: '1mb' }));
   app.use(cookieParser());
   app.use(requestLogger);
