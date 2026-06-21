@@ -38,19 +38,11 @@ Create a `.env` file with:
 
 MONGO\_URI=your\_mongodb\_connection\_string
 
-
-
 PORT=5000
-
-
 
 JWT\_ACCESS\_SECRET=at\_least\_32\_characters\_long
 
-
-
 JWT\_REFRESH\_SECRET=at\_least\_32\_characters\_long
-
-
 
 GEMINI\_API\_KEY=your\_gemini\_api\_key
 
@@ -86,7 +78,6 @@ Save (Ctrl+S).
 
 3\. Git init and commit (run in order, in project root)
 
-cmdcd C:\\Users\\kunch\\OneDrive\\Desktop\\AI\_Travel\_Planner
 
 git init
 
@@ -96,5 +87,5 @@ git status
 
 Stop here and paste the git status output to me before running the commit — I need to confirm .env, node\_modules, and any junk files aren't listed as files to be committed. Once I confirm it's clean, run:
 
-cmdgit commit -m "Initial commit: AI Travel Planner with deterministic health score"
+git commit -m "Initial commit: AI Travel Planner with deterministic health score"
 
