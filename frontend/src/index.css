@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .data-readout {
+  font-family: theme('fontFamily.mono');
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+  body {
+    @apply bg-bg text-ink font-sans antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display text-ink;
+  }
+
+  /* Visible keyboard focus everywhere -- never suppressed for aesthetics. */
+  :focus-visible {
+    outline: 2px solid theme('colors.primary.DEFAULT');
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  /* Tabular figures for any data readout -- scores, costs, times -- so
+     digits don't jitter in width as they change. */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
