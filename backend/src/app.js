@@ -31,8 +31,19 @@ export function createApp() {
   app.set('trust proxy', 1);
 
   app.use(helmet());
+  const allowedOrigins = [
+    env.clientOrigin,
+    'https://rishitha1204.github.io',
+  ];
+
   app.use(cors({
-    origin: env.clientOrigin,
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    },
     credentials: true,
   }));
   app.use(express.json({ limit: '1mb' }));
