@@ -2,7 +2,7 @@
 
 > Plan trips, generate AI itineraries, and get a **Trip Health Score** — a deterministic, AI-free score measuring how good your trip plan actually is.
 
-**🔗 Live demo:** [ai-travel-planner-mu-sandy.vercel.app](https://ai-travel-planner-mu-sandy.vercel.app)
+**🔗 Live demo:** [rishitha1204.github.io/AI_Travel_Planner/](https://rishitha1204.github.io/AI_Travel_Planner/)
 **📦 Repository:** [github.com/rishitha1204/AI_Travel_Planner](https://github.com/rishitha1204/AI_Travel_Planner)
 
 ---
